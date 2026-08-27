@@ -1,0 +1,14 @@
+public static void count(ArrayList<Object> myList) {
+    int[] count = new int[3];
+
+    for (Object o : myList) {
+        if (o instanceof Student)
+            count[0]++;
+        if (o instanceof Rockstar)
+            count[1]++;
+        if (o instanceof Hacker)
+            count[2]++;
+    }
+
+    System.out.println(count[0] + " " + count[1] + " " + count[2]);
+}
